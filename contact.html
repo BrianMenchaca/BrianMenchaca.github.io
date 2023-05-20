@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/superball.ico">
+    <title>Contacto</title>
+
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/form.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;400&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="/js/header.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">PokeMencha</div>
+
+            <nav>
+                <a href="/index.html">Inicio</a>
+                <a href="/pokedex.html">Pokedex</a>
+                <a href="/table.html">Tabla Debilidades</a>
+                <a href="/contact.html">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form">
+        <h2>Contactanos</h2>
+
+        <form action="contact.html" method="get">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" class="camposFormularios campoEnRojo"
+                onblur="validateFormContacto()">
+
+            <label for="telefono">telefono:</label>
+            <input type="tel" name="telefono" id="telefono" class="camposFormularios"
+                onblur="validateFormContactoTelefono()">
+            
+            <label for="correo">correo:</label>
+            <input type="email" name="correo" id="correo" class="camposFormularios"
+                onblur="validateFormContactoEmail()">
+
+            <label for="campo">Mensaje: </label>
+            <textarea name="campo" id="campo" cols="30" rows="10" class="camposFormularios"
+                onblur="validateFormContactoCampo()"></textarea>
+
+            <button type="submit" id="botonSubmit" class="botonSubmit">enviar</button>
+        </form>
+    </div>
+
+    <footer>
+        <ul>
+            <li><b>Nuestros datos:</b> </li>
+            <li><img src="/img/phone-call.png" class="icono"></i></i><b> Tel: </b>11 4969-0281</li>
+            <li><img src="/img/whatsapp.png" class="icono"></i><b> WhatsApp: </b>11 4969-0281</li>
+            <li><img src="/img/email.png" class="icono"></i><b> Email: </b>brianmenchaca@gmail.com</li>
+        </ul>
+    </footer>
+
+    <script src="/js/form.js"></script>
+
+</body>
+
+</html>
